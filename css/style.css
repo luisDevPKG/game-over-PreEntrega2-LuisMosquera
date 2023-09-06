@@ -24,7 +24,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/background-header.jpeg);
+    background-image: url(../assets/background-header.jpeg);
     background-size: cover;
     background-position: center;
     padding-bottom: 1rem;
@@ -121,39 +121,39 @@ header {
     animation: slider 15s ease-in-out infinite;
 }
 #contenedor-juego-1 {
-    background-image: url(/assets/ofertas/background-1.png);
+    background-image: url(../assets/ofertas/background-1.png);
     background-size: cover;
 }
 #contenedor-juego-1 .img-juego {
     width: 300rem;
     height: 45rem;
-    background-image: url(/assets/ofertas/elden-ring-game.webp);
+    background-image: url(../assets/ofertas/elden-ring-game.webp);
     background-size: cover;
     background-position: center;
     margin: 3rem;
     border-radius: 2rem;
 }
 #contenedor-juego-2 {
-    background-image: url(/assets/ofertas/background-2.png);
+    background-image: url(../assets/ofertas/background-2.png);
     background-size: cover;
 }
 #contenedor-juego-2 .img-juego {
     width: 300rem;
     height: 45rem;
-    background-image: url(/assets/ofertas/horizon-zero-dawn.jpeg);
+    background-image: url(../assets/ofertas/horizon-zero-dawn.jpeg);
     background-size: cover;
     background-position: center;
     margin: 3rem;
     border-radius: 2rem;
 }
 #contenedor-juego-3 {
-    background-image: url(/assets/ofertas/background-3.png);
+    background-image: url(../assets/ofertas/background-3.png);
     background-size: cover;
 }
 #contenedor-juego-3 .img-juego {
     width: 300rem;
     height: 45rem;
-    background-image: url(/assets/ofertas/dead-space-game.webp);
+    background-image: url(../assets/ofertas/dead-space-game.webp);
     background-size: cover;
     background-position: center;
     margin: 3rem;
