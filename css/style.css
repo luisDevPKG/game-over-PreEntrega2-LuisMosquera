@@ -749,7 +749,8 @@ header {
     .container-principal .layout__cont .logo--st {
         margin: 0 0 2rem 0;
     }
-    .container-principal .layout__cont .descripcion-empresa .texto--des{
+    .container-principal .layout__cont .descripcion-empresa .texto--des {
+        padding: 0 3rem 0 3rem;
         margin-bottom: 4rem;
     }
     /* Informacion contacto */
