@@ -51,7 +51,6 @@ header {
     background-color: #6D6D6D;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 1rem;
 }
 .nav-bar .contenedor {
     margin-bottom: .25rem;
@@ -316,6 +315,7 @@ header {
     margin: .5rem;
     width: 80px;
     height: 80px;
+    padding-bottom: 1rem;
 }
 .redes .redes-icon a:hover {
     color: unset;
@@ -323,7 +323,7 @@ header {
 }
 .copyrigth {
     text-align: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     background-color: #6D6D6D;
     padding-bottom: .5rem;
 }
@@ -340,7 +340,8 @@ header {
     width: 80%;
 }
 .exclusivos .exclusivo__consola--st {
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
+    padding: 4rem 0;
     font-weight: bold;
     font-size: 3rem;
     text-transform: uppercase;
@@ -352,6 +353,7 @@ header {
     grid-row-gap: 6rem;
     justify-items: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 .exclusivos .grid-container .card-container {
     width: 100%;
@@ -406,11 +408,13 @@ header {
 /* enlaces card */
 .exclusivos .grid-container .card-container .card-info .enlaces {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-bottom: 2rem;
 }
 .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt {
-    margin: 0 1.3rem
+    margin: 0 1.3rem;
+    text-decoration: none;
+    color: #1264FF;
 }
 /* QUIENES SOMOS */
 .container-principal {
