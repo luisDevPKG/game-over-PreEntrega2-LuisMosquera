@@ -78,11 +78,11 @@ header {
 .contenedor .container-fluid .collapse .formulario-search .buscar{
     font-size: 1.5rem;
 }
-.contenedor .container-fluid .collapse .formulario-search .btn {
+.contenedor .container-fluid .collapse .formulario-search .btn-st {
     margin-left: 1rem;
     width: 15rem;
     background-color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     border: solid black;
 }
@@ -561,13 +561,16 @@ header {
 }
 
 /* Vista Escritorio */
-@media (max-width: 1280px) {
+@media (max-width: 1399px) {
     .titulo .contenido-titulo h1 {
         font-size: 3rem;
     }
     .nav-bar .contenedor .nav-principal a{
         font-size: 1.5rem;
         margin: 0 3rem;
+    }
+    .contenedor .container-fluid .collapse .formulario-search .btn-st {
+        height: 2.7rem;
     }
     .ofertas .promociones {
         width: 90%;
@@ -667,13 +670,17 @@ header {
     /* Boton hamburguesa seccion formulario buscar */
     .nav-bar .contenedor .container-fluid .collapse .formulario-search {
         margin: 0 auto;
-        margin-left: 2.2rem;
+        margin-left: 1.5rem;
         margin-bottom: 1rem;
         height: 3rem;
         width: 100%;
     }
-    .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar{
+    .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
         width: 60rem;
+    }
+    .contenedor .container-fluid .collapse .formulario-search .btn-st {
+        height: unset;
+        width: 12rem;
     }
     .ofertas h2 {
         font-size: 3.3rem;
