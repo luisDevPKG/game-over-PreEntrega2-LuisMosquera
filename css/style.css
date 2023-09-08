@@ -85,6 +85,7 @@ header {
     font-size: 1.3rem;
     font-weight: bold;
     border: solid black;
+    color: var(--black);
 }
 .contenedor .container-fluid .collapse .formulario-search .btn-st:hover{
     cursor: pointer;
@@ -670,7 +671,7 @@ header {
     /* Boton hamburguesa seccion formulario buscar */
     .nav-bar .contenedor .container-fluid .collapse .formulario-search {
         margin: 0 auto;
-        margin-left: 1.5rem;
+        margin-left: 1.1rem;
         margin-bottom: 1rem;
         height: 3rem;
         width: 100%;
@@ -821,9 +822,16 @@ header {
         font-size: 2rem;
         line-height: 4rem;
     }
+    /* Boton hamburguesa seccion formulario buscar */
+    .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+        margin-left: 1.5rem;
+    }
     .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
         width: 20rem;
     }
+    /* .contenedor .container-fluid .collapse .formulario-search .btn-st {
+        width: 12rem;
+    } */
     .ofertas h2 {
         font-size: 3.5rem;
     }
