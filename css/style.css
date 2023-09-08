@@ -86,7 +86,7 @@ header {
     font-weight: bold;
     border: solid black;
 }
-.contenedor .container-fluid .collapse .formulario-search .btn:hover{
+.contenedor .container-fluid .collapse .formulario-search .btn-st:hover{
     cursor: pointer;
     background-color: aqua;
 }
