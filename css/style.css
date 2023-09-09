@@ -61,7 +61,7 @@ header {
     font-weight: bold;
     font-size: 2rem;
     padding: 1rem;
-    margin: 0 5rem;
+    margin: 0 2rem;
 }
 .nav-bar .contenedor .nav-principal a:hover {
     color: aqua;
@@ -71,9 +71,7 @@ header {
 }
 /* -- Estilos barra busqueda y boton buscar -- */
 .contenedor .container-fluid .collapse .formulario-search {
-    margin-left: 10rem;
     height: 3.5rem;
-    width: 25rem;
 }
 .contenedor .container-fluid .collapse .formulario-search .buscar{
     font-size: 1.5rem;
@@ -125,8 +123,8 @@ header {
     background-size: cover;
 }
 #contenedor-juego-1 .img-juego {
-    width: 300rem;
-    height: 45rem;
+    width: 340rem;
+    height: 40rem;
     background-image: url(../assets/ofertas/elden-ring-game.webp);
     background-size: cover;
     background-position: center;
@@ -138,8 +136,8 @@ header {
     background-size: cover;
 }
 #contenedor-juego-2 .img-juego {
-    width: 300rem;
-    height: 45rem;
+    width: 340rem;
+    height: 40rem;
     background-image: url(../assets/ofertas/horizon-zero-dawn.jpeg);
     background-size: cover;
     background-position: center;
@@ -151,8 +149,8 @@ header {
     background-size: cover;
 }
 #contenedor-juego-3 .img-juego {
-    width: 300rem;
-    height: 45rem;
+    width: 340rem;
+    height: 40rem;
     background-image: url(../assets/ofertas/dead-space-game.webp);
     background-size: cover;
     background-position: center;
@@ -324,7 +322,6 @@ header {
 }
 .copyrigth {
     text-align: center;
-    /* margin-top: 2rem; */
     background-color: #6D6D6D;
     padding-bottom: .5rem;
 }
@@ -338,10 +335,9 @@ header {
 /* PLATAFORMAS */
 .exclusivos {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 .exclusivos .exclusivo__consola--st {
-    /* margin: 4rem 0; */
     padding: 4rem 0;
     font-weight: bold;
     font-size: 3rem;
@@ -403,8 +399,8 @@ header {
     padding: 1rem 0 1rem 1rem;
 }
 .exclusivos .grid-container .juego-trailer iframe {
-    width: 100rem;
-    height: 60rem;
+    width: 50vw;
+    height: 70rem;
 }
 /* enlaces card */
 .exclusivos .grid-container .card-container .card-info .enlaces {
@@ -416,6 +412,7 @@ header {
     margin: 0 1.3rem;
     text-decoration: none;
     color: #1264FF;
+    display: inline-block;
 }
 /* QUIENES SOMOS */
 .container-principal {
@@ -561,8 +558,8 @@ header {
     color: black;
 }
 
-/* Vista Escritorio */
-@media (max-width: 1399px) {
+/* --- Vista Escritorio -- pantallas extra grandes -- */
+@media screen and (max-width: 1200px) {
     .titulo .contenido-titulo h1 {
         font-size: 3rem;
     }
@@ -574,20 +571,20 @@ header {
         height: 2.7rem;
     }
     .ofertas .promociones {
-        width: 90%;
-        height: 55rem;
+        width: 80%;
+        /* height: 55rem; */
     }
     .ofertas .promociones #contenedor-juego-1 .img-juego {
         width: 400rem;
-        height: 35rem;
+        /* height: 35rem; */
     }
     .ofertas .promociones #contenedor-juego-2 .img-juego {
         width: 400rem;
-        height: 35rem;
+        /* height: 35rem; */
     }
     .ofertas .promociones #contenedor-juego-3 .img-juego {
         width: 400rem;
-        height: 35rem;
+        /* height: 35rem; */
     }
     .contenedor .container-fluid .collapse .formulario-search {
         margin-left: 3rem;
@@ -623,22 +620,9 @@ header {
     .formulario .formulario-informacion .btn-container .btn-form {
         width: 25%;
     }
-    /* PLATAFORMAS */
-    .exclusivos {
-        width: 95%;
-    }
-    .exclusivos .grid-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    /* Frame juego */
-    .exclusivos .grid-container .juego-trailer iframe {
-        width: 70rem;
-        height: 50rem;
-    }
 }
-
-/* Vista Tablets */
-@media (max-width: 768px) {
+/* --- Vista Tablets --- */
+@media screen and (max-width: 768px) {
     header {
         flex-direction: row;
         justify-content: unset;
@@ -671,7 +655,7 @@ header {
     /* Boton hamburguesa seccion formulario buscar */
     .nav-bar .contenedor .container-fluid .collapse .formulario-search {
         margin: 0 auto;
-        margin-left: 1.1rem;
+        margin-left: 1.1vw;
         margin-bottom: 1rem;
         height: 3rem;
         width: 100%;
@@ -808,8 +792,8 @@ header {
     }
 }
 
-/* Vista mobile */
-@media (max-width: 480px) {
+/* --- Vista mobile -- */
+@media screen and (max-width: 480px) {
     header {
         flex-direction: column;
     }
@@ -824,14 +808,16 @@ header {
     }
     /* Boton hamburguesa seccion formulario buscar */
     .nav-bar .contenedor .container-fluid .collapse .formulario-search {
-        margin-left: 1.5rem;
+        justify-content: space-evenly;
+        width: 94%;
     }
     .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
         width: 20rem;
     }
-    /* .contenedor .container-fluid .collapse .formulario-search .btn-st {
-        width: 12rem;
-    } */
+    .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+        margin-left: unset;
+        width: 10rem;
+    }
     .ofertas h2 {
         font-size: 3.5rem;
     }
@@ -954,6 +940,4 @@ header {
         width: 40%;
     }
 }
-
-
 
