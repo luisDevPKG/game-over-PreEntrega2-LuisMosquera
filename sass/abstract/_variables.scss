@@ -19,7 +19,7 @@ $img-juego: (
 /* Contenedores juegos slider */
 $contenedor: juego-1, juego-2, juego-3;
 
-/* Mixin display cards slider vista standar*/
+/* display cards slider vista standar*/
 @mixin contendores-juegos {
     display: flex;
     justify-content: space-between;
@@ -28,14 +28,14 @@ $contenedor: juego-1, juego-2, juego-3;
     animation: slider 15s ease-in-out infinite;
 }
 
-/* Mixin display cards slider vista mobile*/
+/* display cards slider vista mobile*/
 @mixin contendores-juegos-mv {
     flex-direction: column;
     background-position: center;
     justify-content: unset;
 }
 
-/* Mixin Cards Planes y precios*/
+/* Cards Planes y precios*/
 @mixin plan-precios-titulo {
     font-size: 3rem;
     color: $black;
@@ -86,5 +86,82 @@ $contenedor: juego-1, juego-2, juego-3;
     margin-bottom: 1rem;
     font-size: 1.8rem;
     font-weight: bold;
+    color: $white;
+}
+/* logo - quienes somos */
+@mixin logo-qsomos {
+    background-color: $black;
+    margin: 2rem 0 2rem 3rem;
+    padding: 3rem;
+    border-radius: 20px;
+    height: unset;
+}
+/* titulo mision vision - quienes somos */
+@mixin mv-style {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* estilo texto mision vision - quienes somos */
+@mixin mv-txt-style {
+    text-align: justify;
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+/* estilo iconos tel y email - quienes somos */
+@mixin qsomos-icon-style {
+    width: 7rem;
+    height: 7rem;
+    margin: 1.5rem 0;
+    padding: unset;
+}
+/* Iframe ubicacion - quienes somos */
+@mixin qsomos-iframe-style {
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+/* titulo contactanos */
+@mixin contact-titulo {
+    margin: 4rem 0;
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+/* Subtitulo - contactanos */
+@mixin contact-sub {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: unset;
+}
+/* Estilo Formulario - contactanos */
+@mixin contact-form-style {
+    width: 53%;
+    margin: 0 auto;
+    border: solid black;
+    padding: 4rem 4rem 4rem 4rem;
+    margin-bottom: 5rem;
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    background-color: #FAFAFA;
+}
+/* Radio buttons formulario - contactanos*/
+@mixin btnck-contact-form-style {
+    margin-top: .5rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+/* Boton enviar formulario - contactanos*/
+@mixin btn_enviar_contact_form-style {
+    width: 15%;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: #6D6D6D;
+    border: solid black;
     color: $white;
 }

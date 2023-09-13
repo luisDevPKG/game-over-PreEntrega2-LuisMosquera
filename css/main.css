@@ -4,10 +4,20 @@
 /* Imagenes background - seccion ofertas */
 /* Imagen del juego - seccion ofertas */
 /* Contenedores juegos slider */
-/* Mixin display cards slider vista standar*/
-/* Mixin display cards slider vista mobile*/
-/* Mixin Cards Planes y precios*/
+/* display cards slider vista standar*/
+/* display cards slider vista mobile*/
+/* Cards Planes y precios*/
 /* Mixin footer*/
+/* logo - quienes somos */
+/* titulo mision vision - quienes somos */
+/* estilo texto mision vision - quienes somos */
+/* estilo iconos tel y email - quienes somos */
+/* Iframe ubicacion - quienes somos */
+/* titulo contactanos */
+/* Subtitulo - contactanos */
+/* Estilo Formulario - contactanos */
+/* Radio buttons formulario - contactanos*/
+/* Boton enviar formulario - contactanos*/
 /* base */
 html {
   font-size: 62.5%; /* para hacer uso del rem sin problema -- 1 rem = 10px */
@@ -385,6 +395,152 @@ header {
   color: #ffffff;
 }
 
+/* Quienes somos */
+.container-principal {
+  margin-bottom: 5rem;
+}
+.container-principal .container__titulo {
+  margin: 5rem 0;
+}
+.container-principal .container__titulo .titulo--st {
+  font-size: 4.2rem;
+  font-weight: bold;
+}
+.container-principal .layout__cont {
+  display: flex;
+  align-items: center;
+}
+.container-principal .layout__cont .logo {
+  margin: 0 1rem 2rem 2rem;
+}
+.container-principal .layout__cont .logo .logo--st {
+  background-color: #000000;
+  margin: 2rem 0 2rem 3rem;
+  padding: 3rem;
+  border-radius: 20px;
+  height: unset;
+}
+.container-principal .layout__cont .descripcion-empresa .texto--des {
+  text-align: justify;
+  font-size: 1.7rem;
+  padding: 0 4.5rem 0 3rem;
+}
+.container-principal .mision-vision .mision__cont .mv-sty {
+  /* -- Mision, Vision */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container-principal .mision-vision .mision__cont .mv-sty span {
+  margin-right: 0.5rem;
+}
+.container-principal .mision-vision .mision__cont .texto--mv {
+  text-align: justify;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+.container-principal .contacto-info {
+  /* Informacion contacto */
+  display: flex;
+  align-items: center;
+}
+.container-principal .contacto-info .content__info .contacto--sty {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container-principal .contacto-info .content__info .icon-sty {
+  width: 7rem;
+  height: 7rem;
+  margin: 1.5rem 0;
+  padding: unset;
+}
+.container-principal .contacto-info .content__info .texto--cont {
+  font-size: 1.8rem;
+}
+.container-principal .ubicacion-info .ub--ti--stl {
+  /* Ubicacion */
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* Contactanos */
+.formulario h2 {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+.formulario h3 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: unset;
+}
+.formulario .formulario-informacion {
+  width: 53%;
+  margin: 0 auto;
+  border: solid black;
+  padding: 4rem 4rem 4rem 4rem;
+  margin-bottom: 5rem;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  background-color: #FAFAFA;
+}
+.formulario .formulario-informacion .row label {
+  font-size: 2rem;
+}
+.formulario .formulario-informacion .row .form-input .input-data {
+  padding: 0.5rem;
+  font-size: 1.7rem;
+}
+.formulario .formulario-informacion .row .form-input .input-data::placeholder {
+  opacity: 40%;
+}
+.formulario .formulario-informacion .fieldset-container {
+  margin-top: 3rem;
+}
+.formulario .formulario-informacion .fieldset-container legend {
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+.formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.formulario .formulario-informacion .textarea-container .textarea-label {
+  /* Text area formulario */
+  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
+}
+.formulario .formulario-informacion .textarea-container .textarea-content {
+  height: 15rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.formulario .formulario-informacion .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.formulario .formulario-informacion .btn-container .btn-form {
+  width: 15%;
+  height: 5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: #6D6D6D;
+  border: solid black;
+  color: #ffffff;
+}
+.formulario .formulario-informacion .btn-container .btn-form:hover {
+  cursor: pointer;
+  background-color: aqua;
+  color: black;
+}
+
 /* Media queries */
 /* --- Vista Escritorio -- pantallas extra grandes -- */
 @media screen and (max-width: 1200px) {
@@ -433,11 +589,11 @@ header {
   .formulario .formulario-informacion label {
     margin-right: 0;
   }
-  .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
-    margin-left: unset;
-  }
   .formulario .formulario-informacion .fieldset-container {
     display: inline-block;
+  }
+  .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
+    margin-left: unset;
   }
   .formulario .formulario-informacion .btn-container .btn-form {
     width: 25%;
@@ -536,6 +692,9 @@ header {
     height: 50%;
   }
   /* FOOTER */
+  .redes h3 {
+    width: 15%;
+  }
   .redes .redes-icon img {
     width: 60px;
     height: 60px;
@@ -562,21 +721,21 @@ header {
   .container-principal .layout__cont .logo {
     margin: 0 0 2rem 0;
   }
-  .container-principal .layout__cont .logo--st {
+  .container-principal .layout__cont .logo .logo--st {
     margin: 0 0 2rem 0;
   }
   .container-principal .layout__cont .descripcion-empresa .texto--des {
     padding: 0 3rem 0 3rem;
     margin-bottom: 4rem;
   }
-  /* Informacion contacto */
   .container-principal .cont-mbl {
+    /* Informacion contacto */
     width: 100%;
   }
   .container-principal .contacto-info {
     margin-bottom: 3rem;
   }
-  .container-principal .contacto-info .content__info .contaco--sty {
+  .container-principal .contacto-info .content__info .contacto--sty {
     font-size: 2rem;
     font-weight: bold;
   }
@@ -595,7 +754,7 @@ header {
   .formulario .formulario-informacion {
     width: 80%;
   }
-  .formulario .formulario-informacion .fieldset-container .check-w {
+  .formulario .formulario-informacion .fieldset-container .form-check .check-w {
     width: 25%;
     margin-top: 2rem;
     margin-left: 9rem;
@@ -607,8 +766,9 @@ header {
   .formulario .formulario-informacion .fieldset-container .form-check .check-lb {
     padding: 0.5rem;
   }
-  .redes h3 {
-    width: 15%;
+  .formulario .formulario-informacion .textarea-container .textarea-label {
+    /* Text area formulario */
+    margin: 0 0 1rem 0;
   }
 }
 /* --- Vista mobile -- */
@@ -739,8 +899,8 @@ header {
   .container-principal .container__titulo .titulo--st {
     font-size: 3.8rem;
   }
-  /* Informacion contacto */
   .container-principal .contacto-info {
+    /* Informacion contacto */
     margin-bottom: 3rem;
     display: unset;
   }
@@ -748,6 +908,7 @@ header {
     margin-bottom: 4rem;
   }
   .container-principal .ubicacion-info .ub__map .iframe--stl {
+    /* Iframe */
     width: 34rem;
   }
   /* -- CONTACTANOS -- */

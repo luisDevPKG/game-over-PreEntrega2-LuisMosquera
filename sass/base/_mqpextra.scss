@@ -38,19 +38,32 @@
         gap: 3rem;
     }
     /* -- CONTACTANOS -- */
-    .formulario .formulario-informacion {
-        padding: 4rem 4rem 4rem 5rem;
-    }
-    .formulario .formulario-informacion label {
-        margin-right: 0;
-    }
-    .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
-        margin-left: unset;
-    }
-    .formulario .formulario-informacion .fieldset-container {
-        display: inline-block;
-    }
-    .formulario .formulario-informacion .btn-container .btn-form {
-        width: 25%;
+    .formulario {
+        
+        & .formulario-informacion {
+            padding: 4rem 4rem 4rem 5rem;
+
+            & label {
+                margin-right: 0;
+            }
+
+            & .fieldset-container {
+                display: inline-block;
+
+                & .form-check {
+
+                    & .check-in-wh {
+                        margin-left: unset;
+                    }
+                }
+            }
+
+            & .btn-container {
+
+                & .btn-form {
+                    width: 25%;
+                }
+            }
+        }
     }
 }

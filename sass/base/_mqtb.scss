@@ -107,9 +107,19 @@
         }
     }
     /* FOOTER */
-    .redes .redes-icon img {
-        width: 60px;
-        height: 60px;
+    .redes {
+
+        & h3  {
+            width: 15%;
+        }
+
+        & .redes-icon {
+
+            & img {
+                width: 60px;
+                height: 60px;
+            }
+        }
     }
     /* PLATAFORMAS */
     .exclusivos {
@@ -127,58 +137,89 @@
         height: 40rem;
     }
     /* -- QUIENES SOMOS -- */
-    .container-principal .layout__cont {
-        display: unset;
-    }
-    .container-principal .layout__cont .logo {
-        margin: 0 0 2rem 0;
-    }
-    .container-principal .layout__cont .logo--st {
-        margin: 0 0 2rem 0;
-    }
-    .container-principal .layout__cont .descripcion-empresa .texto--des {
-        padding: 0 3rem 0 3rem;
-        margin-bottom: 4rem;
-    }
-    /* Informacion contacto */
-    .container-principal .cont-mbl {
-        width: 100%;
-    }
-    .container-principal .contacto-info {
-        margin-bottom: 3rem;
-    }
-    .container-principal .contacto-info .content__info .contaco--sty {
-        font-size: 2rem;
-        font-weight: bold
-    }
-    .container-principal .contacto-info .content__info .icon-sty {
-        width: 5rem;
-        height: 5rem;
-    }
-    .container-principal .contacto-info .content__info .texto--cont {
-        font-size: 1.8rem;
+    .container-principal {
+        & .layout__cont {
+            display: unset;
+    
+            & .logo {
+                margin: 0 0 2rem 0;
+    
+                & .logo--st {
+                    margin: 0 0 2rem 0;
+                }
+            }
+    
+            & .descripcion-empresa .texto--des {
+                padding: 0 3rem 0 3rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+        & .cont-mbl {
+            /* Informacion contacto */
+            width: 100%;
+        }
+
+        & .contacto-info {
+            margin-bottom: 3rem;
+
+            & .content__info {
+
+                & .contacto--sty {
+                    font-size: 2rem;
+                    font-weight: bold
+                }
+
+                & .icon-sty {
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                & .texto--cont {
+                    font-size: 1.8rem;
+                }
+            }
+        }
     }
     /* -- CONTACTANOS -- */
-    .formulario h3 {
-        text-align: justify;
-        padding: 0 8rem;
-    }
-    .formulario .formulario-informacion {
-        width: 80%;
-    }
-    .formulario .formulario-informacion .fieldset-container .check-w {
-        width: 25%;
-        margin-top: 2rem;
-        margin-left: 9rem;
-    }
-    .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
-        width: 3rem;
-        height: 3rem;
-    }
-    .formulario .formulario-informacion .fieldset-container .form-check .check-lb {
-        padding: .5rem;
-    }
-    .redes h3 {
-        width: 15%;
+    .formulario {
+
+        & h3 {
+            text-align: justify;
+            padding: 0 8rem;
+        }
+
+        & .formulario-informacion {
+            width: 80%;
+
+            & .fieldset-container {
+
+                & .form-check {
+
+                    & .check-w {
+                        width: 25%;
+                        margin-top: 2rem;
+                        margin-left: 9rem;
+                    }
+
+                    & .check-in-wh {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    & .check-lb {
+                        padding: .5rem;
+                    }
+                }
+            }
+            
+            & .textarea-container  {
+
+                & .textarea-label {
+                    /* Text area formulario */
+                    margin: 0 0 1rem 0;
+                }
+            }
+        }
     }
 }

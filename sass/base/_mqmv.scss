@@ -111,42 +111,76 @@
         margin-bottom: 2rem;
     }
     /* -- QUIENES SOMOS -- */
-    .container-principal .container__titulo .titulo--st{
-        font-size: 3.8rem;
-    }
-    /* Informacion contacto */
-    .container-principal .contacto-info {
-        margin-bottom: 3rem;
-        display: unset
-    }
-    .container-principal .contacto-info .content__info {
-        margin-bottom: 4rem;
-    }
-    .container-principal .ubicacion-info .ub__map .iframe--stl {
-        width: 34rem;
+    .container-principal {
+
+        & .container__titulo {
+
+            & .titulo--st {
+                font-size: 3.8rem;
+            }
+        }
+
+        & .contacto-info {
+            /* Informacion contacto */
+            margin-bottom: 3rem;
+            display: unset;
+
+            & .content__info {
+                margin-bottom: 4rem;
+            }
+        }
+
+        & .ubicacion-info {
+            & .ub__map {
+
+                & .iframe--stl {
+                    /* Iframe */
+                    width: 34rem;
+                }
+            }
+        }
+
     }
     /* -- CONTACTANOS -- */
-    .formulario h2 {
-        padding: 0 1rem;
-    }
-    .formulario h3 {
-        padding: 0 3rem;
-    }
-    .formulario .formulario-informacion {
-        width: 90%;
-        padding: 4rem 3rem 4rem 3rem;
-    }
-    .formulario .formulario-informacion .fieldset-container legend {
-        margin-right: unset;
-    }
-    .formulario .formulario-informacion .fieldset-container .check-w {
-        width: 31%;
-        margin-left: 2rem;
-    }
-    .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
-        margin-right: unset;
-    }
-    .formulario .formulario-informacion .btn-container .btn-form {
-        width: 40%;
+    .formulario {
+
+        & h2 {
+            padding: 0 1rem;
+        }
+
+        & h3 {
+            padding: 0 3rem;
+        }
+
+        & .formulario-informacion {
+            width: 90%;
+            padding: 4rem 3rem 4rem 3rem;
+
+            & .fieldset-container {
+
+                & legend {
+                    margin-right: unset;
+                }
+
+                & .check-w {
+                    width: 31%;
+                    margin-left: 2rem;
+                }
+                
+                & .form-check {
+
+                    & .check-in-wh {
+                        margin-right: unset;
+                    }
+                }
+            }
+
+            & .btn-container {
+
+                & .btn-form {
+                    width: 40%;
+                }
+            }
+        }
     }
 }
