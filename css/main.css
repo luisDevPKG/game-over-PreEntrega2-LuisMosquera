@@ -1,0 +1,779 @@
+@charset "UTF-8";
+/* abstracts */
+/* Defino la paleta de colores de la pagina */
+/* Imagenes background - seccion ofertas */
+/* Imagen del juego - seccion ofertas */
+/* Contenedores juegos slider */
+/* Mixin display cards slider vista standar*/
+/* Mixin display cards slider vista mobile*/
+/* Mixin Cards Planes y precios*/
+/* Mixin footer*/
+/* base */
+html {
+  font-size: 62.5%; /* para hacer uso del rem sin problema -- 1 rem = 10px */
+  /* Establece el tamaño base en 10px lo que facilita la conversión */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -- Estilos Header -- */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/background-header.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 1rem;
+}
+
+/* Header */
+.logo img {
+  margin-top: 1rem;
+  width: 25rem;
+  margin-left: 3rem;
+}
+
+.titulo {
+  color: #ffffff;
+  margin: 0 3rem;
+}
+.titulo .contenido-titulo h1 {
+  font-size: 4rem;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  text-align: justify;
+  line-height: 6rem;
+  margin: 0 2.5rem;
+}
+
+/* navbar */
+/* -- Estilos Navbar -- */
+.nav-bar {
+  background-color: #6D6D6D;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-bar .contenedor {
+  margin-bottom: 0.25rem;
+  padding: 0;
+  /* -- Estilos barra busqueda y boton buscar -- */
+}
+.nav-bar .contenedor .container-fluid .collapse .nav-principal a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0 2rem;
+}
+.nav-bar .contenedor .container-fluid .collapse .nav-principal a:hover {
+  color: aqua;
+  background-color: #464646;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.nav-bar .contenedor .container-fluid .collapse .formulario-search {
+  height: 3.5rem;
+}
+.nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+  font-size: 1.5rem;
+}
+.nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+  margin-left: 1rem;
+  width: 15rem;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: solid black;
+  color: #000000;
+}
+.nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+/* Ofertas */
+/* -- Seccion OFERTAS -- */
+.ofertas h2 {
+  margin: 4rem 0;
+  font-size: 4rem;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ofertas {
+  position: relative;
+}
+
+.ofertas .promociones {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  margin: 0 auto;
+  background-color: #F4FFFE;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0rem 2.5rem rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 70%;
+}
+.ofertas .promociones #contenedor-juego-1 {
+  /* Dimensiones de la imagen de background en el Slider */
+  background-image: url("/assets/ofertas/background-1.png");
+  background-size: cover;
+  /* estilo contenedor juego - slider */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  animation: slider 15s ease-in-out infinite;
+}
+.ofertas .promociones #contenedor-juego-2 {
+  /* Dimensiones de la imagen de background en el Slider */
+  background-image: url("/assets/ofertas/background-2.png");
+  background-size: cover;
+  /* estilo contenedor juego - slider */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  animation: slider 15s ease-in-out infinite;
+}
+.ofertas .promociones #contenedor-juego-3 {
+  /* Dimensiones de la imagen de background en el Slider */
+  background-image: url("/assets/ofertas/background-3.png");
+  background-size: cover;
+  /* estilo contenedor juego - slider */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  animation: slider 15s ease-in-out infinite;
+}
+.ofertas .promociones #contenedor-juego-1 .img-juego {
+  /* Dimensiones de las imagenes del juego en el Slider */
+  width: 340rem;
+  height: 40rem;
+  background-image: url("/assets/ofertas/elden-ring-game.webp");
+  background-size: cover;
+  background-position: center;
+  margin: 3rem;
+  border-radius: 2rem;
+}
+.ofertas .promociones #contenedor-juego-2 .img-juego {
+  /* Dimensiones de las imagenes del juego en el Slider */
+  width: 340rem;
+  height: 40rem;
+  background-image: url("/assets/ofertas/horizon-zero-dawn.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin: 3rem;
+  border-radius: 2rem;
+}
+.ofertas .promociones #contenedor-juego-3 .img-juego {
+  /* Dimensiones de las imagenes del juego en el Slider */
+  width: 340rem;
+  height: 40rem;
+  background-image: url("/assets/ofertas/dead-space-game.webp");
+  background-size: cover;
+  background-position: center;
+  margin: 3rem;
+  border-radius: 2rem;
+}
+.ofertas .promociones .informacion {
+  margin: 0 3rem 0 0;
+  text-align: justify;
+}
+.ofertas .promociones .informacion .info-descripcion {
+  /* Informacion de cada juego - slider */
+  font-size: 1.8rem;
+}
+.ofertas .promociones .informacion .info-descripcion b {
+  font-family: "Bree Serif", serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.ofertas .promociones .informacion .star-rating {
+  /* Ofertas - Calificacion */
+  display: inline-block;
+}
+.ofertas .promociones .informacion .star-rating span {
+  font-size: 3rem;
+  color: #000000;
+}
+.ofertas .promociones .boton-slider {
+  position: absolute;
+  left: 46.5%;
+  bottom: 3%;
+}
+.ofertas .promociones .boton-slider .boton {
+  display: inline-block;
+  margin: 0 2rem;
+  background-color: #000000;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 1.2rem;
+}
+.ofertas .promociones .boton-slider .boton:hover {
+  box-shadow: 0rem, 0rem, 0.7rem, rgba(0, 0, 0, 0.6);
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* Planes y precios */
+.planes h2 {
+  margin: 7rem 0 3rem 0;
+  font-size: 3rem;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.planes .planes-info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-content: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.planes .planes-info .card {
+  /* Card estilo */
+  border: none;
+  align-items: center;
+  border-radius: 5% 5% 0 0;
+  box-shadow: 0.6rem 0.6rem 0.5rem 0.4rem rgba(0, 0, 0, 0.57);
+  margin-bottom: 5rem;
+}
+.planes .planes-info .un-anio-ps {
+  grid-column: 2/3;
+}
+.planes .planes-info .tres-meses-ps {
+  grid-column: 3/4;
+}
+.planes .planes-info .un-mes-ps {
+  grid-column: 4/5;
+}
+.planes .planes-info .ps-plus-img {
+  width: 100%;
+  height: 80%;
+  padding: unset;
+}
+.planes .planes-info .card .card-info {
+  /* Estilos CARDS en general (PS y XBOX) */
+  text-align: center;
+}
+.planes .planes-info .card .card-info .titulo-promo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.planes .planes-info .card .card-info .card-descripcion {
+  font-size: 1.4rem;
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+.planes .planes-info .card .card-info .btn-comprar-ps {
+  /* Boton comprar PS */
+  padding: 1rem 3rem;
+  background-color: #2356B6;
+  border: solid #2356B6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.planes .planes-info .card .card-info .btn-comprar-xbox {
+  /* Boton compar xbox */
+  padding: 1rem 3rem;
+  background-color: #0A9220;
+  border: solid #0A9220;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.planes .planes-info .game-pass-img {
+  /* XBOX GAME PASS */
+  width: 100%;
+  height: 80%;
+  padding: unset;
+}
+.planes .planes-info .un-anio-xbox {
+  grid-column: 2/3;
+}
+.planes .planes-info .tres-meses-xbox {
+  grid-column: 3/4;
+}
+.planes .planes-info .un-mes-xbox {
+  grid-column: 4/5;
+}
+.planes .planes-info .animacion-card {
+  /* Animacion cards - Planes */
+  transition: transform 0.3s ease-in-out;
+}
+.planes .planes-info .animacion-card:hover {
+  transform: translateY(-15px);
+}
+
+/* Footer */
+.redes h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 10%;
+}
+
+.redes .redes-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.redes .redes-icon img {
+  margin: 0.5rem;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 1rem;
+}
+.redes .redes-icon a:hover {
+  color: unset;
+  background-color: unset;
+}
+
+.copyrigth {
+  text-align: center;
+  background-color: #6D6D6D;
+  padding-bottom: 0.5rem;
+}
+.copyrigth .copyrigth-info {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Media queries */
+/* --- Vista Escritorio -- pantallas extra grandes -- */
+@media screen and (max-width: 1200px) {
+  .titulo .contenido-titulo h1 {
+    font-size: 3rem;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .nav-principal a {
+    font-size: 1.5rem;
+    margin: 0 3rem;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+    margin-left: 3rem;
+    height: 2.5rem;
+    width: 20rem;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+    font-size: 1.5rem;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+    height: 2.7rem;
+    margin-left: 1rem;
+    width: 10rem;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+  }
+  .ofertas .promociones {
+    width: 80%;
+  }
+  .ofertas .promociones #contenedor-juego-1 .img-juego {
+    width: 400rem;
+  }
+  .ofertas .promociones #contenedor-juego-2 .img-juego {
+    width: 400rem;
+  }
+  .ofertas .promociones #contenedor-juego-3 .img-juego {
+    width: 400rem;
+  }
+  .planes .planes-info {
+    grid-template-rows: unset;
+    gap: 3rem;
+  }
+  /* -- CONTACTANOS -- */
+  .formulario .formulario-informacion {
+    padding: 4rem 4rem 4rem 5rem;
+  }
+  .formulario .formulario-informacion label {
+    margin-right: 0;
+  }
+  .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
+    margin-left: unset;
+  }
+  .formulario .formulario-informacion .fieldset-container {
+    display: inline-block;
+  }
+  .formulario .formulario-informacion .btn-container .btn-form {
+    width: 25%;
+  }
+}
+/* --- Vista Tablets --- */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: unset;
+  }
+  .logo img {
+    margin-left: 3rem;
+  }
+  .titulo .contenido-titulo h1 {
+    font-size: 2.3rem;
+    line-height: 6rem;
+  }
+  .nav-bar .contenedor {
+    width: 100%;
+  }
+  .nav-bar .contenedor .container-fluid {
+    /* Boton hamburguesa del navbar */
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-toggler {
+    background-color: #CBCBCB;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .nav-principal a {
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+    /* Boton hamburguesa seccion formulario buscar */
+    margin: 0 auto;
+    margin-left: 1.1vw;
+    margin-bottom: 1rem;
+    height: 3rem;
+    width: 100%;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+    width: 60rem;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+    height: unset;
+    width: 12rem;
+  }
+  .ofertas h2 {
+    font-size: 3.3rem;
+  }
+  .ofertas .promociones {
+    width: 95%;
+    height: 51rem;
+  }
+  .ofertas .promociones #contenedor-juego-1 .img-juego {
+    width: 250rem;
+    height: 35rem;
+  }
+  .ofertas .promociones #contenedor-juego-2 .img-juego {
+    width: 250rem;
+    height: 35rem;
+  }
+  .ofertas .promociones #contenedor-juego-3 .img-juego {
+    width: 250rem;
+    height: 35rem;
+  }
+  .ofertas .promociones .informacion .info-descripcion {
+    font-size: 1.8rem;
+  }
+  .ofertas .promociones .informacion .info-descripcion span {
+    display: none;
+  }
+  .ofertas .promociones .informacion .info-descripcion b {
+    font-size: 2.5rem;
+  }
+  .ofertas .promociones .informacion .star-rating span {
+    margin-bottom: 3rem;
+  }
+  .ofertas .promociones .boton-slider {
+    left: 40%;
+    bottom: 2.5%;
+  }
+  .planes .planes-info {
+    gap: 3rem;
+  }
+  .planes .planes-info .card {
+    margin-bottom: 3rem;
+    width: 22rem;
+  }
+  .planes .planes-info .ps-plus-img {
+    height: 50%;
+  }
+  .planes .planes-info .game-pass-img {
+    height: 50%;
+  }
+  /* FOOTER */
+  .redes .redes-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  /* PLATAFORMAS */
+  .exclusivos {
+    width: 80%;
+  }
+  .exclusivos .grid-container {
+    display: unset;
+  }
+  /* Frame juego */
+  .exclusivos .grid-container .juego-trailer {
+    margin: 3rem 0;
+  }
+  .exclusivos .grid-container .juego-trailer iframe {
+    width: 100%;
+    height: 40rem;
+  }
+  /* -- QUIENES SOMOS -- */
+  .container-principal .layout__cont {
+    display: unset;
+  }
+  .container-principal .layout__cont .logo {
+    margin: 0 0 2rem 0;
+  }
+  .container-principal .layout__cont .logo--st {
+    margin: 0 0 2rem 0;
+  }
+  .container-principal .layout__cont .descripcion-empresa .texto--des {
+    padding: 0 3rem 0 3rem;
+    margin-bottom: 4rem;
+  }
+  /* Informacion contacto */
+  .container-principal .cont-mbl {
+    width: 100%;
+  }
+  .container-principal .contacto-info {
+    margin-bottom: 3rem;
+  }
+  .container-principal .contacto-info .content__info .contaco--sty {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .container-principal .contacto-info .content__info .icon-sty {
+    width: 5rem;
+    height: 5rem;
+  }
+  .container-principal .contacto-info .content__info .texto--cont {
+    font-size: 1.8rem;
+  }
+  /* -- CONTACTANOS -- */
+  .formulario h3 {
+    text-align: justify;
+    padding: 0 8rem;
+  }
+  .formulario .formulario-informacion {
+    width: 80%;
+  }
+  .formulario .formulario-informacion .fieldset-container .check-w {
+    width: 25%;
+    margin-top: 2rem;
+    margin-left: 9rem;
+  }
+  .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
+    width: 3rem;
+    height: 3rem;
+  }
+  .formulario .formulario-informacion .fieldset-container .form-check .check-lb {
+    padding: 0.5rem;
+  }
+  .redes h3 {
+    width: 15%;
+  }
+}
+/* --- Vista mobile -- */
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  .logo img {
+    margin-top: 1rem;
+    width: 25rem;
+    margin: 2rem 0;
+  }
+  .titulo .contenido-titulo h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  /* Boton hamburguesa seccion formulario buscar */
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+    justify-content: space-evenly;
+    width: 94%;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+    width: 20rem;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+    margin-left: unset;
+    width: 10rem;
+  }
+  .ofertas h2 {
+    font-size: 3.5rem;
+  }
+  .ofertas .promociones {
+    width: 95%;
+    height: 84rem;
+  }
+  .ofertas .promociones .informacion {
+    margin: 0 2rem;
+  }
+  .ofertas .promociones .informacion .info-descripcion {
+    font-size: 2rem;
+  }
+  .ofertas .promociones .informacion .star-rating {
+    margin-bottom: 2rem;
+  }
+  .ofertas .promociones .informacion .star-rating span {
+    font-size: 2rem;
+  }
+  .ofertas .promociones #contenedor-juego-1 {
+    /* estilo contenedor juego - slider */
+    flex-direction: column;
+    background-position: center;
+    justify-content: unset;
+  }
+  .ofertas .promociones #contenedor-juego-2 {
+    /* estilo contenedor juego - slider */
+    flex-direction: column;
+    background-position: center;
+    justify-content: unset;
+  }
+  .ofertas .promociones #contenedor-juego-3 {
+    /* estilo contenedor juego - slider */
+    flex-direction: column;
+    background-position: center;
+    justify-content: unset;
+  }
+  .ofertas .promociones #contenedor-juego-1 .img-juego {
+    /* Dimensiones de las imagenes del juego en el Slider */
+    width: 32rem;
+    height: 35rem;
+    margin: 3rem 0;
+  }
+  .ofertas .promociones #contenedor-juego-2 .img-juego {
+    /* Dimensiones de las imagenes del juego en el Slider */
+    width: 32rem;
+    height: 35rem;
+    margin: 3rem 0;
+  }
+  .ofertas .promociones #contenedor-juego-3 .img-juego {
+    /* Dimensiones de las imagenes del juego en el Slider */
+    width: 32rem;
+    height: 35rem;
+    margin: 3rem 0;
+  }
+  .ofertas .promociones .boton-slider {
+    left: 33vw;
+    bottom: 1.5%;
+  }
+  .planes h2 {
+    margin: 5rem 0 3rem 0;
+  }
+  .planes .planes-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  .planes .planes-info .card {
+    width: 31rem;
+    height: 31rem;
+  }
+  /* Footer */
+  .redes h3 {
+    width: 50%;
+  }
+  .copyrigth {
+    margin-top: 1rem;
+  }
+  /* PLATAFORMAS */
+  .exclusivos {
+    width: 90%;
+  }
+  .exclusivos .exclusivo__consola--st {
+    font-size: 2rem;
+  }
+  /* enlaces card */
+  .exclusivos .grid-container .card-container .card-info .enlaces {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt {
+    display: block;
+    margin: 0 2rem;
+  }
+  .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt:nth-child(1) {
+    margin-bottom: 2rem;
+  }
+  /* -- QUIENES SOMOS -- */
+  .container-principal .container__titulo .titulo--st {
+    font-size: 3.8rem;
+  }
+  /* Informacion contacto */
+  .container-principal .contacto-info {
+    margin-bottom: 3rem;
+    display: unset;
+  }
+  .container-principal .contacto-info .content__info {
+    margin-bottom: 4rem;
+  }
+  .container-principal .ubicacion-info .ub__map .iframe--stl {
+    width: 34rem;
+  }
+  /* -- CONTACTANOS -- */
+  .formulario h2 {
+    padding: 0 1rem;
+  }
+  .formulario h3 {
+    padding: 0 3rem;
+  }
+  .formulario .formulario-informacion {
+    width: 90%;
+    padding: 4rem 3rem 4rem 3rem;
+  }
+  .formulario .formulario-informacion .fieldset-container legend {
+    margin-right: unset;
+  }
+  .formulario .formulario-informacion .fieldset-container .check-w {
+    width: 31%;
+    margin-left: 2rem;
+  }
+  .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
+    margin-right: unset;
+  }
+  .formulario .formulario-informacion .btn-container .btn-form {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

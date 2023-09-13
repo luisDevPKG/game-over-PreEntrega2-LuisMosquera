@@ -1,0 +1,56 @@
+/* --- Vista Escritorio -- pantallas extra grandes -- */
+@media screen and (max-width: 1200px) {
+    .titulo .contenido-titulo h1 {
+        font-size: 3rem;
+    }
+    .nav-bar .contenedor .container-fluid .collapse .nav-principal a{
+        font-size: 1.5rem;
+        margin: 0 3rem;
+    }
+    .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+        margin-left: 3rem;
+        height: 2.5rem;
+        width: 20rem;
+
+        & .buscar{
+            font-size: 1.5rem;
+        }
+
+        & .btn-st {
+            height: 2.7rem;
+            margin-left: 1rem;
+            width: 10rem;
+            background-color: $white;
+            font-size: 1.2rem;
+        }
+    }
+    .ofertas .promociones {
+        width: 80%;
+
+        @each $contenedor in $contenedor {
+            #contenedor-#{$contenedor} .img-juego {
+                width: 400rem;
+            }
+        }
+    }
+    .planes .planes-info {
+        grid-template-rows: unset;
+        gap: 3rem;
+    }
+    /* -- CONTACTANOS -- */
+    .formulario .formulario-informacion {
+        padding: 4rem 4rem 4rem 5rem;
+    }
+    .formulario .formulario-informacion label {
+        margin-right: 0;
+    }
+    .formulario .formulario-informacion .fieldset-container .form-check .check-in-wh {
+        margin-left: unset;
+    }
+    .formulario .formulario-informacion .fieldset-container {
+        display: inline-block;
+    }
+    .formulario .formulario-informacion .btn-container .btn-form {
+        width: 25%;
+    }
+}

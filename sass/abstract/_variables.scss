@@ -1,0 +1,90 @@
+/* Defino la paleta de colores de la pagina */
+$black: #000000;
+$white: #ffffff;
+$background: #F3F3F3;
+
+/* Imagenes background - seccion ofertas */
+$imgbg-juegos: (
+    juego-1: url('/assets/ofertas/background-1.png'),
+    juego-2: url('/assets/ofertas/background-2.png'),
+    juego-3: url('/assets/ofertas/background-3.png')
+);
+
+/* Imagen del juego - seccion ofertas */
+$img-juego: (
+    juego-1: url('/assets/ofertas/elden-ring-game.webp'),
+    juego-2: url('/assets/ofertas/horizon-zero-dawn.jpeg'),
+    juego-3: url('/assets/ofertas/dead-space-game.webp')
+);
+/* Contenedores juegos slider */
+$contenedor: juego-1, juego-2, juego-3;
+
+/* Mixin display cards slider vista standar*/
+@mixin contendores-juegos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    animation: slider 15s ease-in-out infinite;
+}
+
+/* Mixin display cards slider vista mobile*/
+@mixin contendores-juegos-mv {
+    flex-direction: column;
+    background-position: center;
+    justify-content: unset;
+}
+
+/* Mixin Cards Planes y precios*/
+@mixin plan-precios-titulo {
+    font-size: 3rem;
+    color: $black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+@mixin plan-precios-gri {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+@mixin plan-precios-card {
+    border: none;
+    align-items: center;
+    border-radius: 5% 5% 0 0;
+    box-shadow: .6rem .6rem .5rem .4rem rgba(0,0,0,0.57);
+    margin-bottom: 5rem;
+}
+@mixin btn-ps {
+    padding: 1rem 3rem;
+    background-color: #2356B6;
+    border: solid #2356B6;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@mixin btn-xbx{
+    padding: 1rem 3rem;
+    background-color: #0A9220;
+    border: solid #0A9220;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Mixin footer*/
+@mixin footer-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+@mixin foot-copyrigth-info {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $white;
+}
