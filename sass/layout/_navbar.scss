@@ -12,18 +12,24 @@
 
             & .collapse {
 
-                & .nav-principal a {
-                    color: $white;
-                    font-weight: bold;
-                    font-size: 2rem;
-                    padding: 1rem;
-                    margin: 0 2rem;
+                & .nav-principal {
 
-                    &:hover {
-                        color: aqua;
-                        background-color: #464646;
-                        cursor: pointer;
-                        transition: color 0.5s;
+                    & .nav-item {
+                        
+                        & a {
+                            color: $white;
+                            font-weight: bold;
+                            font-size: 2rem;
+                            padding: 1rem;
+                            margin: 0 2rem;
+        
+                            &:hover {
+                                color: aqua;
+                                background-color: #464646;
+                                cursor: pointer;
+                                transition: color 0.5s;
+                            }
+                        }
                     }
                 }
     

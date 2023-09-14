@@ -28,9 +28,12 @@
     
                     & .nav-principal {
 
-                        & a {
-                            font-size: 1.8rem;
-                            text-align: center;
+                        & .nav-item {
+
+                            a {
+                                font-size: 1.8rem;
+                                text-align: center;
+                            }
                         }
                     }
     

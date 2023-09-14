@@ -82,14 +82,14 @@ header {
   padding: 0;
   /* -- Estilos barra busqueda y boton buscar -- */
 }
-.nav-bar .contenedor .container-fluid .collapse .nav-principal a {
+.nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a {
   color: #ffffff;
   font-weight: bold;
   font-size: 2rem;
   padding: 1rem;
   margin: 0 2rem;
 }
-.nav-bar .contenedor .container-fluid .collapse .nav-principal a:hover {
+.nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a:hover {
   color: aqua;
   background-color: #464646;
   cursor: pointer;
@@ -633,7 +633,7 @@ header {
   .titulo .contenido-titulo h1 {
     font-size: 3rem;
   }
-  .nav-bar .contenedor .container-fluid .collapse .nav-principal a {
+  .nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a {
     font-size: 1.5rem;
     margin: 0 3rem;
   }
@@ -710,7 +710,7 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-toggler {
     background-color: #CBCBCB;
   }
-  .nav-bar .contenedor .container-fluid .collapse .nav-principal a {
+  .nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a {
     font-size: 1.8rem;
     text-align: center;
   }
