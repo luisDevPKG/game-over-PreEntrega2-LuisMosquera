@@ -137,6 +137,7 @@ header {
   box-shadow: 0.5rem 0rem 2.5rem rgba(0, 0, 0, 0.6);
   overflow: hidden;
   width: 70%;
+  height: 55rem;
 }
 .ofertas .promociones #contenedor-juego-1 {
   /* Dimensiones de la imagen de background en el Slider */
@@ -567,7 +568,7 @@ header {
     font-size: 1.2rem;
   }
   .ofertas .promociones {
-    width: 80%;
+    width: 95%;
   }
   .ofertas .promociones #contenedor-juego-1 .img-juego {
     width: 400rem;
@@ -599,8 +600,8 @@ header {
     width: 25%;
   }
 }
-/* --- Vista Tablets --- */
-@media screen and (max-width: 768px) {
+/* --- Vista Tablets grande --- */
+@media screen and (max-width: 990px) {
   header {
     flex-direction: row;
     justify-content: unset;
@@ -637,17 +638,13 @@ header {
     width: 100%;
   }
   .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
-    width: 60rem;
+    width: 84%;
   }
   .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
     height: unset;
     width: 12rem;
   }
-  .ofertas h2 {
-    font-size: 3.3rem;
-  }
   .ofertas .promociones {
-    width: 95%;
     height: 51rem;
   }
   .ofertas .promociones #contenedor-juego-1 .img-juego {
@@ -675,8 +672,8 @@ header {
     margin-bottom: 3rem;
   }
   .ofertas .promociones .boton-slider {
-    left: 40%;
-    bottom: 2.5%;
+    left: 43%;
+    bottom: 1.5%;
   }
   .planes .planes-info {
     gap: 3rem;
@@ -690,14 +687,6 @@ header {
   }
   .planes .planes-info .game-pass-img {
     height: 50%;
-  }
-  /* FOOTER */
-  .redes h3 {
-    width: 15%;
-  }
-  .redes .redes-icon img {
-    width: 60px;
-    height: 60px;
   }
   /* PLATAFORMAS */
   .exclusivos {
@@ -713,6 +702,14 @@ header {
   .exclusivos .grid-container .juego-trailer iframe {
     width: 100%;
     height: 40rem;
+  }
+  /* FOOTER */
+  .redes h3 {
+    width: 15%;
+  }
+  .redes .redes-icon img {
+    width: 60px;
+    height: 60px;
   }
   /* -- QUIENES SOMOS -- */
   .container-principal .layout__cont {
@@ -748,7 +745,7 @@ header {
   }
   /* -- CONTACTANOS -- */
   .formulario h3 {
-    text-align: justify;
+    text-align: center;
     padding: 0 8rem;
   }
   .formulario .formulario-informacion {
@@ -771,8 +768,25 @@ header {
     margin: 0 0 1rem 0;
   }
 }
-/* --- Vista mobile -- */
-@media screen and (max-width: 480px) {
+/* --- Vista Tablets --- */
+@media screen and (max-width: 768px) {
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+    width: 80%;
+  }
+  .ofertas h2 {
+    font-size: 3.3rem;
+  }
+  .ofertas .promociones .boton-slider {
+    left: 40%;
+    bottom: 2.5%;
+  }
+  /* -- CONTACTANOS -- */
+  .formulario h3 {
+    text-align: justify;
+  }
+}
+/* --- Vista mobile horizontal-- */
+@media screen and (max-width: 740px) {
   header {
     flex-direction: column;
   }
@@ -788,21 +802,22 @@ header {
   /* Boton hamburguesa seccion formulario buscar */
   .nav-bar .contenedor .container-fluid .collapse .formulario-search {
     justify-content: space-evenly;
-    width: 94%;
+    width: 95%;
   }
   .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
-    width: 20rem;
+    width: 70%;
   }
   .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
     margin-left: unset;
     width: 10rem;
   }
+  /* Ofertas */
   .ofertas h2 {
     font-size: 3.5rem;
   }
   .ofertas .promociones {
     width: 95%;
-    height: 84rem;
+    height: 72rem;
   }
   .ofertas .promociones .informacion {
     margin: 0 2rem;
@@ -836,26 +851,26 @@ header {
   }
   .ofertas .promociones #contenedor-juego-1 .img-juego {
     /* Dimensiones de las imagenes del juego en el Slider */
-    width: 32rem;
+    width: 75%;
     height: 35rem;
     margin: 3rem 0;
   }
   .ofertas .promociones #contenedor-juego-2 .img-juego {
     /* Dimensiones de las imagenes del juego en el Slider */
-    width: 32rem;
+    width: 75%;
     height: 35rem;
     margin: 3rem 0;
   }
   .ofertas .promociones #contenedor-juego-3 .img-juego {
     /* Dimensiones de las imagenes del juego en el Slider */
-    width: 32rem;
+    width: 75%;
     height: 35rem;
     margin: 3rem 0;
   }
   .ofertas .promociones .boton-slider {
-    left: 33vw;
     bottom: 1.5%;
   }
+  /* Planes y precios */
   .planes h2 {
     margin: 5rem 0 3rem 0;
   }
@@ -865,8 +880,11 @@ header {
     margin: 1rem;
   }
   .planes .planes-info .card {
-    width: 31rem;
-    height: 31rem;
+    width: 40rem;
+    height: 36rem;
+  }
+  .planes .planes-info .card .card-info .card-descripcion {
+    padding: 1.5rem 0;
   }
   /* Footer */
   .redes h3 {
@@ -934,6 +952,38 @@ header {
   }
   .formulario .formulario-informacion .btn-container .btn-form {
     width: 40%;
+  }
+}
+/* --- Vista mobile -- */
+@media screen and (max-width: 480px) {
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+    width: 94%;
+  }
+  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+    width: 20rem;
+  }
+  /* Ofertas */
+  .ofertas .promociones {
+    height: 84rem;
+  }
+  .ofertas .promociones #contenedor-juego-1 .img-juego {
+    /* Dimensiones de las imagenes del juego en el Slider */
+    width: 32rem;
+  }
+  .ofertas .promociones #contenedor-juego-2 .img-juego {
+    /* Dimensiones de las imagenes del juego en el Slider */
+    width: 32rem;
+  }
+  .ofertas .promociones #contenedor-juego-3 .img-juego {
+    /* Dimensiones de las imagenes del juego en el Slider */
+    width: 32rem;
+  }
+  .ofertas .promociones .boton-slider {
+    left: 33vw;
+  }
+  /* Planes y precios */
+  .planes .planes-info .card {
+    width: 31rem;
   }
 }
 

@@ -19,6 +19,7 @@
     box-shadow: .5rem 0rem 2.5rem rgba(0, 0, 0, .6);
     overflow: hidden;
     width: 70%;
+    height: 55rem;
     
     @each $bgjuego, $imgbg in $imgbg-juegos {
         #contenedor-#{$bgjuego} {

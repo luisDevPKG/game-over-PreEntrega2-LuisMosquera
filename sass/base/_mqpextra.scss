@@ -25,13 +25,14 @@
         }
     }
     .ofertas .promociones {
-        width: 80%;
+        width:95%;
 
         @each $contenedor in $contenedor {
             #contenedor-#{$contenedor} .img-juego {
                 width: 400rem;
             }
         }
+        
     }
     .planes .planes-info {
         grid-template-rows: unset;

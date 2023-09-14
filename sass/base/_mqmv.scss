@@ -1,186 +1,33 @@
 /* --- Vista mobile -- */
 @media screen and (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
-    .logo img {
-        margin-top: 1rem;
-        width:  25rem;
-        margin: 2rem 0;
-    }
-    .titulo .contenido-titulo h1 {
-        font-size: 2rem;
-        line-height: 4rem;
-    }
-    /* Boton hamburguesa seccion formulario buscar */
+
     .nav-bar .contenedor .container-fluid .collapse .formulario-search {
-        justify-content: space-evenly;
         width: 94%;
 
         & .buscar {
             width: 20rem;
         }
-
-        & .btn-st {
-            margin-left: unset;
-            width: 10rem;
-        }
     }
-    .ofertas h2 {
-        font-size: 3.5rem;
-    }
+    /* Ofertas */
     .ofertas .promociones {
-        width: 95%;
         height: 84rem;
-
-        & .informacion {
-            margin: 0 2rem;
-    
-            & .info-descripcion {
-                font-size: 2rem;
-            }
-    
-            & .star-rating {
-                margin-bottom: 2rem;
-    
-                & span {
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        @each $bgjuego, $imgbg in $imgbg-juegos {
-            #contenedor-#{$bgjuego} {
-                /* estilo contenedor juego - slider */
-                @include contendores-juegos-mv;
-            }
-        }
 
         @each $juego, $img in $img-juego {
             #contenedor-#{$juego} .img-juego {
                 /* Dimensiones de las imagenes del juego en el Slider */
                 width: 32rem;
-                height: 35rem;
-                margin: 3rem 0;
             }
         }
 
         & .boton-slider {
             left: 33vw;
-            bottom: 1.5%;
         }
     }
-    .planes h2 {
-        margin: 5rem 0 3rem 0;
-    }
+    /* Planes y precios */
     .planes .planes-info {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 1rem;
-
+        
         & .card {
             width: 31rem;
-            height: 31rem;
-        }
-    }
-    /* Footer */
-    .redes h3 {
-        width: 50%;
-    }
-    .copyrigth {
-        margin-top: 1rem;
-    }
-    /* PLATAFORMAS */
-    .exclusivos {
-        width: 90%;
-    }
-    .exclusivos .exclusivo__consola--st {
-        font-size: 2rem;
-    }
-    /* enlaces card */
-    .exclusivos .grid-container .card-container .card-info .enlaces {
-        text-align: center;
-        font-size: 2rem;
-        padding-bottom: 2rem;
-    }
-    .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt {
-        display: block;
-        margin: 0 2rem;
-    }
-    .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt:nth-child(1) {
-        margin-bottom: 2rem;
-    }
-    /* -- QUIENES SOMOS -- */
-    .container-principal {
-
-        & .container__titulo {
-
-            & .titulo--st {
-                font-size: 3.8rem;
-            }
-        }
-
-        & .contacto-info {
-            /* Informacion contacto */
-            margin-bottom: 3rem;
-            display: unset;
-
-            & .content__info {
-                margin-bottom: 4rem;
-            }
-        }
-
-        & .ubicacion-info {
-            & .ub__map {
-
-                & .iframe--stl {
-                    /* Iframe */
-                    width: 34rem;
-                }
-            }
-        }
-
-    }
-    /* -- CONTACTANOS -- */
-    .formulario {
-
-        & h2 {
-            padding: 0 1rem;
-        }
-
-        & h3 {
-            padding: 0 3rem;
-        }
-
-        & .formulario-informacion {
-            width: 90%;
-            padding: 4rem 3rem 4rem 3rem;
-
-            & .fieldset-container {
-
-                & legend {
-                    margin-right: unset;
-                }
-
-                & .check-w {
-                    width: 31%;
-                    margin-left: 2rem;
-                }
-                
-                & .form-check {
-
-                    & .check-in-wh {
-                        margin-right: unset;
-                    }
-                }
-            }
-
-            & .btn-container {
-
-                & .btn-form {
-                    width: 40%;
-                }
-            }
         }
     }
 }
