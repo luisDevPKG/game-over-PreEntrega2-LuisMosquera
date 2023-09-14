@@ -141,7 +141,7 @@ header {
 }
 .ofertas .promociones #contenedor-juego-1 {
   /* Dimensiones de la imagen de background en el Slider */
-  background-image: url("/assets/ofertas/background-1.png");
+  background-image: url(../assets/ofertas/background-1.png);
   background-size: cover;
   /* estilo contenedor juego - slider */
   display: flex;
@@ -152,7 +152,7 @@ header {
 }
 .ofertas .promociones #contenedor-juego-2 {
   /* Dimensiones de la imagen de background en el Slider */
-  background-image: url("/assets/ofertas/background-2.png");
+  background-image: url(../assets/ofertas/background-1.png);
   background-size: cover;
   /* estilo contenedor juego - slider */
   display: flex;
@@ -163,7 +163,7 @@ header {
 }
 .ofertas .promociones #contenedor-juego-3 {
   /* Dimensiones de la imagen de background en el Slider */
-  background-image: url("/assets/ofertas/background-3.png");
+  background-image: url(../assets/ofertas/background-1.png);
   background-size: cover;
   /* estilo contenedor juego - slider */
   display: flex;
@@ -176,7 +176,7 @@ header {
   /* Dimensiones de las imagenes del juego en el Slider */
   width: 340rem;
   height: 40rem;
-  background-image: url("/assets/ofertas/elden-ring-game.webp");
+  background-image: url(../assets/ofertas/elden-ring-game.webp);
   background-size: cover;
   background-position: center;
   margin: 3rem;
@@ -186,7 +186,7 @@ header {
   /* Dimensiones de las imagenes del juego en el Slider */
   width: 340rem;
   height: 40rem;
-  background-image: url("/assets/ofertas/horizon-zero-dawn.jpeg");
+  background-image: url(../assets/ofertas/horizon-zero-dawn.jpeg);
   background-size: cover;
   background-position: center;
   margin: 3rem;
@@ -196,7 +196,7 @@ header {
   /* Dimensiones de las imagenes del juego en el Slider */
   width: 340rem;
   height: 40rem;
-  background-image: url("/assets/ofertas/dead-space-game.webp");
+  background-image: url(../assets/ofertas/dead-space-game.webp);
   background-size: cover;
   background-position: center;
   margin: 3rem;

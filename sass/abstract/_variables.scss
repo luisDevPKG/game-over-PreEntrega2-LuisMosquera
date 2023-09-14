@@ -5,16 +5,16 @@ $background: #F3F3F3;
 
 /* Imagenes background - seccion ofertas */
 $imgbg-juegos: (
-    juego-1: url('/assets/ofertas/background-1.png'),
-    juego-2: url('/assets/ofertas/background-2.png'),
-    juego-3: url('/assets/ofertas/background-3.png')
+    juego-1: url(../assets/ofertas/background-1.png),
+    juego-2: url(../assets/ofertas/background-1.png),
+    juego-3: url(../assets/ofertas/background-1.png)
 );
 
 /* Imagen del juego - seccion ofertas */
 $img-juego: (
-    juego-1: url('/assets/ofertas/elden-ring-game.webp'),
-    juego-2: url('/assets/ofertas/horizon-zero-dawn.jpeg'),
-    juego-3: url('/assets/ofertas/dead-space-game.webp')
+    juego-1: url(../assets/ofertas/elden-ring-game.webp),
+    juego-2: url(../assets/ofertas/horizon-zero-dawn.jpeg),
+    juego-3: url(../assets/ofertas/dead-space-game.webp)
 );
 /* Contenedores juegos slider */
 $contenedor: juego-1, juego-2, juego-3;
