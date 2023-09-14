@@ -152,7 +152,7 @@ header {
 }
 .ofertas .promociones #contenedor-juego-2 {
   /* Dimensiones de la imagen de background en el Slider */
-  background-image: url(../assets/ofertas/background-1.png);
+  background-image: url(../assets/ofertas/background-2.png);
   background-size: cover;
   /* estilo contenedor juego - slider */
   display: flex;
@@ -163,7 +163,7 @@ header {
 }
 .ofertas .promociones #contenedor-juego-3 {
   /* Dimensiones de la imagen de background en el Slider */
-  background-image: url(../assets/ofertas/background-1.png);
+  background-image: url(../assets/ofertas/background-3.png);
   background-size: cover;
   /* estilo contenedor juego - slider */
   display: flex;
