@@ -1,11 +1,23 @@
 /* --- Vista mobile -- */
 @media screen and (max-width: 480px) {
 
-    .nav-bar .contenedor .container-fluid .collapse .formulario-search {
-        width: 94%;
+    .nav-bar {
 
-        & .buscar {
-            width: 20rem;
+        & .contenedor {
+
+            & .container-fluid {
+
+                & .collapse {
+                    & .formulario-search {
+                        width: 94%;
+                
+                        & .buscar {
+                            // width: 20rem;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
         }
     }
     /* Ofertas */
@@ -22,6 +34,10 @@
         & .boton-slider {
             left: 33vw;
         }
+    }
+    /* Plataformas */
+    .exclusivos {
+        width: 90%;
     }
     /* Planes y precios */
     .planes .planes-info {

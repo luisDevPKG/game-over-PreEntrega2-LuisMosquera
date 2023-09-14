@@ -165,3 +165,28 @@ $contenedor: juego-1, juego-2, juego-3;
     border: solid black;
     color: $white;
 }
+/* Grilla Plataformas */
+@mixin grid-plataforma {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 6rem;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+/* Contenedor Card - Plataformas */
+@mixin card-con-plataforma {
+    width: 100%;
+    border: solid black;
+    border-radius: 1.5rem;
+    background-color: #eaeaea;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+/* Imagenes Card - Plataformas */
+@mixin img-card-plataforma {
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 4rem;
+}

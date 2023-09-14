@@ -1,18 +1,18 @@
 /* --- Vista Tablets --- */
 @media screen and (max-width: 768px) {
-    .nav-bar .contenedor {
+    .nav-bar {
+        & .contenedor {
 
-        & .container-fluid {
-
-            & .collapse {
-
-                & .formulario-search {
+            & .container-fluid {
     
-                    & .buscar {
-                        // width: 60rem;
-                        width: 80%;
+                & .collapse {
+    
+                    & .formulario-search {
+        
+                        & .buscar {
+                            width: 80%;
+                        }
                     }
-
                 }
             }
         }
@@ -27,7 +27,25 @@
             bottom: 2.5%;
         }
     }
-    /* -- CONTACTANOS -- */
+    /* -- Plataformas -- */
+    .exclusivos {
+        width: 80%;
+
+        & .grid-container {
+            display: unset;
+
+            & .juego-trailer {
+                /* Frame juego */
+                margin: 3rem 0;
+
+                & iframe {
+                    width: 100%;
+                    height: 40rem;
+                }
+            }
+        }
+    }
+    /* -- Contactanos -- */
     .formulario {
 
         & h3 {

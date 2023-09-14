@@ -4,26 +4,39 @@
         flex-direction: column;
     }
     .logo img {
-        margin-top: 1rem;
-        width:  25rem;
         margin: 2rem 0;
     }
-    .titulo .contenido-titulo h1 {
-        font-size: 2rem;
-        line-height: 4rem;
+    .titulo {
+
+        & .contenido-titulo h1 {
+            font-size: 2rem;
+            line-height: 4rem;
+        }
     }
     /* Boton hamburguesa seccion formulario buscar */
-    .nav-bar .contenedor .container-fluid .collapse .formulario-search {
-        justify-content: space-evenly;
-        width: 95%;
+    .nav-bar {
 
-        & .buscar {
-            width: 70%;
-        }
+        & .contenedor {
 
-        & .btn-st {
-            margin-left: unset;
-            width: 10rem;
+            & .container-fluid {
+                
+                & .collapse {
+
+                    & .formulario-search {
+                        justify-content: space-evenly;
+                        width: 95%;
+                
+                        & .buscar {
+                            width: 70%;
+                        }
+                
+                        & .btn-st {
+                            margin-left: unset;
+                            width: 10rem;
+                        }
+                    }
+                }
+            }
         }
     }
     /* Ofertas */
@@ -98,27 +111,37 @@
     .copyrigth {
         margin-top: 1rem;
     }
-    /* PLATAFORMAS */
+    /* Plataformas */
     .exclusivos {
-        width: 90%;
+        
+        & .exclusivo__consola--st {
+            font-size: 2rem;
+        }
+
+        & .grid-container {
+
+            & .card-container {
+
+                & .card-info {
+
+                    & .enlaces {
+                        /* enlaces card */
+                        font-size: 2rem;
+
+                        & .card_link--opt {
+                            display: block;
+                            margin: 0 2rem;
+
+                            &:nth-child(1) {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    .exclusivos .exclusivo__consola--st {
-        font-size: 2rem;
-    }
-    /* enlaces card */
-    .exclusivos .grid-container .card-container .card-info .enlaces {
-        text-align: center;
-        font-size: 2rem;
-        padding-bottom: 2rem;
-    }
-    .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt {
-        display: block;
-        margin: 0 2rem;
-    }
-    .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt:nth-child(1) {
-        margin-bottom: 2rem;
-    }
-    /* -- QUIENES SOMOS -- */
+    /* -- Quienes Somos -- */
     .container-principal {
 
         & .container__titulo {
@@ -149,7 +172,7 @@
         }
 
     }
-    /* -- CONTACTANOS -- */
+    /* -- Contactanos -- */
     .formulario {
 
         & h2 {
