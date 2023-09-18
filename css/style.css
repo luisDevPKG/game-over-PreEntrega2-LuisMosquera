@@ -82,26 +82,26 @@ header {
   padding: 0;
   /* -- Estilos barra busqueda y boton buscar -- */
 }
-.nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a {
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a {
   color: #ffffff;
   font-weight: bold;
   font-size: 2rem;
   padding: 1rem;
   margin: 0 2rem;
 }
-.nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a:hover {
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a:hover {
   color: aqua;
   background-color: #464646;
   cursor: pointer;
   transition: color 0.5s;
 }
-.nav-bar .contenedor .container-fluid .collapse .formulario-search {
+.nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
   height: 3.5rem;
 }
-.nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+.nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
   font-size: 1.5rem;
 }
-.nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+.nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st {
   margin-left: 1rem;
   width: 15rem;
   background-color: #ffffff;
@@ -110,7 +110,7 @@ header {
   border: solid black;
   color: #000000;
 }
-.nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st:hover {
+.nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st:hover {
   cursor: pointer;
   background-color: aqua;
 }
@@ -633,19 +633,19 @@ header {
   .titulo .contenido-titulo h1 {
     font-size: 3rem;
   }
-  .nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a {
     font-size: 1.5rem;
     margin: 0 3rem;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
     margin-left: 3rem;
     height: 2.5rem;
     width: 20rem;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     font-size: 1.5rem;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st {
     height: 2.7rem;
     width: 10rem;
     font-size: 1.2rem;
@@ -709,11 +709,11 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-toggler {
     background-color: #CBCBCB;
   }
-  .nav-bar .contenedor .container-fluid .collapse .nav-principal .nav-item a {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a {
     font-size: 1.8rem;
     text-align: center;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
     /* Boton hamburguesa seccion formulario buscar */
     margin: 0 auto;
     margin-left: 1.1vw;
@@ -721,10 +721,10 @@ header {
     height: 3rem;
     width: 100%;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 80%;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st {
     height: unset;
     width: 12rem;
   }
@@ -856,7 +856,7 @@ header {
 }
 /* --- Vista Tablets --- */
 @media screen and (max-width: 768px) {
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 80%;
   }
   .ofertas h2 {
@@ -899,14 +899,14 @@ header {
     line-height: 4rem;
   }
   /* Boton hamburguesa seccion formulario buscar */
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
     justify-content: space-evenly;
     width: 95%;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 70%;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .btn-st {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st {
     margin-left: unset;
     width: 10rem;
   }
@@ -1050,10 +1050,10 @@ header {
 }
 /* --- Vista mobile -- */
 @media screen and (max-width: 480px) {
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
     width: 94%;
   }
-  .nav-bar .contenedor .container-fluid .collapse .formulario-search .buscar {
+  .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 50%;
   }
   /* Ofertas */
