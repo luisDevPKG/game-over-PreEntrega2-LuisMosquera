@@ -39,6 +39,16 @@
     .exclusivos {
         width: 90%;
     }
+    /* Pago */
+    .game-info {
+
+        & .grid-container-pago {
+
+            & .card-container-form-pago {
+                width: 90%;
+            }
+        }
+    }
     /* Planes y precios */
     .planes .planes-info {
         

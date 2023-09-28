@@ -21,6 +21,15 @@
 /* Grilla Plataformas */
 /* Contenedor Card - Plataformas */
 /* Imagenes Card - Plataformas */
+/* Grilla Pagos */
+/* Contenedor Card Juego - Pago */
+/* Imagen Card - Pago */
+/* Contenedor Card Formulario de Pago */
+/* Radio buttons formulario - Pago*/
+/* Estilo Flex precio juego - Formulario Pago*/
+/* Estilo del precio descuento al juego - Formulario Pago*/
+/* Estilo del porcentaje descuento al juego - Formulario Pago*/
+/* Estilo del precio con descuento al juego - Formulario Pago*/
 /* base */
 html {
   font-size: 62.5%; /* para hacer uso del rem sin problema -- 1 rem = 10px */
@@ -481,6 +490,158 @@ header {
   height: 70rem;
 }
 
+/* Pago */
+.game-info {
+  margin: 0 auto;
+  width: 90%;
+}
+.game-info .grid-container-pago {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.game-info .grid-container-pago .card-container-pago {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+.game-info .grid-container-pago .card-container-pago .img--juego {
+  width: 50%;
+  padding: 3rem;
+  border-radius: 4rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info {
+  margin: 0 3rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .texto .card__title--st {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .texto .card__text--st {
+  margin-top: 1rem;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .informacion-juego .caracteristicas {
+  /* caracteristicas del juego */
+  padding-bottom: 1rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .informacion-juego .caracteristicas .text__caracteristica--st {
+  margin-left: 1.2rem;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .informacion-juego .plataforma-info {
+  margin-top: 1rem;
+  display: flex;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .informacion-juego .plataforma-info .text__plataforma--st {
+  margin-left: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.3rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .informacion-juego .plataforma-info .text__plataforma--st:hover {
+  background-color: #DBDADA;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .precio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .precio .precio--descuento {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .precio .precio--descuento .precio__descuento--st {
+  margin-right: 2rem;
+  color: red;
+  font-size: 2rem;
+  text-decoration: line-through;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .precio .precio--descuento .porcentaje__descuento--st {
+  margin-right: 2rem;
+  background-color: red;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .precio .precio--juego {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.game-info .grid-container-pago .card-container-pago .card-info .precio .precio--juego .precio__juego--st {
+  background-color: #73C846;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+.game-info .grid-container-pago .card-container-form-pago {
+  display: flex;
+  flex-direction: column;
+  border: 0.2rem solid gray;
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  background-color: #E9E9E9;
+  padding: 1rem;
+  width: 80%;
+  height: 42rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .texto .card__title--st {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .tipo-cuenta {
+  margin: 2rem 0;
+}
+.game-info .grid-container-pago .card-container-form-pago .tipo-cuenta .form-check .check-in-wh {
+  margin-left: 3rem;
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .tipo-cuenta .form-check .check-lb {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .metodos-pago {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .metodos-pago .metodo__pago--st {
+  height: 5rem;
+  width: 6rem;
+  margin: 0 1rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .btn-container {
+  margin-top: 2rem;
+}
+.game-info .grid-container-pago .card-container-form-pago .btn-container .btn__pago--sty {
+  display: block;
+  margin: 0 auto;
+  width: 25rem;
+  height: 5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.game-info .grid-container-pago .card-container-form-pago .btn-container .btn__pago--sty .btn__img-sty {
+  width: 8%;
+  margin: 0 0.5rem;
+}
+
 /* Quienes somos */
 .container-principal {
   margin-bottom: 5rem;
@@ -663,6 +824,24 @@ header {
   .ofertas .promociones #contenedor-juego-3 .img-juego {
     width: 400rem;
   }
+  /* Pago */
+  .game-info {
+    width: 100%;
+  }
+  .game-info .grid-container-pago {
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 1rem;
+  }
+  .game-info .grid-container-pago .card-container-pago {
+    flex-direction: column;
+  }
+  .game-info .grid-container-pago .card-container-pago .img--juego {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .game-info .grid-container-pago .card-container-form-pago {
+    width: 90%;
+  }
   /* -- Planes y precios -- */
   .planes .planes-info {
     grid-template-rows: unset;
@@ -788,6 +967,18 @@ header {
   .exclusivos .grid-container .juego-trailer iframe {
     width: 100%;
     height: 40rem;
+  }
+  /* Pago */
+  .game-info .grid-container-pago {
+    grid-template-columns: 1fr;
+  }
+  .game-info .grid-container-pago .card-container-pago {
+    margin-left: unset;
+    flex-direction: column;
+  }
+  .game-info .grid-container-pago .card-container-form-pago {
+    margin-top: 3rem;
+    width: 50%;
   }
   /* Footer */
   .redes h3 {
@@ -1007,6 +1198,10 @@ header {
   .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt:nth-child(1) {
     margin-bottom: 2rem;
   }
+  /* Pago */
+  .game-info .grid-container-pago .card-container-form-pago {
+    width: 80%;
+  }
   /* -- Quienes Somos -- */
   .container-principal .container__titulo .titulo--st {
     font-size: 3.8rem;
@@ -1077,6 +1272,10 @@ header {
   }
   /* Plataformas */
   .exclusivos {
+    width: 90%;
+  }
+  /* Pago */
+  .game-info .grid-container-pago .card-container-form-pago {
     width: 90%;
   }
   /* Planes y precios */

@@ -125,6 +125,23 @@
         width: 100%;
         height: 40rem;
     }
+    /* Pago */
+    .game-info {
+
+        & .grid-container-pago {
+            grid-template-columns: 1fr;
+
+            & .card-container-pago {
+                margin-left: unset;
+                flex-direction: column;
+            }
+
+            & .card-container-form-pago {
+                margin-top: 3rem;
+                width: 50%;
+            }
+        }
+    }
     /* Footer */
     .redes {
 

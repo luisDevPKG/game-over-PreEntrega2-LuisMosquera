@@ -52,6 +52,29 @@
             }
         }
     }
+     /* Pago */
+     .game-info {
+        width: 100%;
+
+        & .grid-container-pago {
+            grid-template-columns: 1.5fr 1fr;
+            grid-column-gap: 1rem;
+
+            & .card-container-pago {
+                flex-direction: column;
+
+                & .img--juego {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+
+            & .card-container-form-pago {
+                width: 90%;
+            }
+        }
+    }
+
     /* -- Planes y precios -- */
     .planes .planes-info {
         grid-template-rows: unset;
