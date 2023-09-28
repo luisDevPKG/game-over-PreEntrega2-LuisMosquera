@@ -146,6 +146,13 @@
 
         & .grid-container-pago {
 
+            & .card-container-pago {
+                
+                & .img--juego {
+                    width: 90%;
+                }
+            }
+
             & .card-container-form-pago {
                 width: 80%;
             }

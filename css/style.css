@@ -1199,6 +1199,9 @@ header {
     margin-bottom: 2rem;
   }
   /* Pago */
+  .game-info .grid-container-pago .card-container-pago .img--juego {
+    width: 90%;
+  }
   .game-info .grid-container-pago .card-container-form-pago {
     width: 80%;
   }
